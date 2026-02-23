@@ -6,6 +6,7 @@ import { PrismaModule } from './prisma/prisma.module';
 import { TaskModule } from './task/task.module';
 import { TimeBlockModule } from './time-block/time-block.module';
 import { PomodoroModule } from './pomodoro/pomodoro.module';
+import { SwaggerModule } from '@nestjs/swagger'
 
 @Module({
   imports: [
@@ -15,6 +16,7 @@ import { PomodoroModule } from './pomodoro/pomodoro.module';
 		PrismaModule,
 		TaskModule,
 		TimeBlockModule,
-		PomodoroModule]
+		PomodoroModule,
+		SwaggerModule]
 })
 export class AppModule {}
