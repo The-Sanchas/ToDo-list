@@ -15,10 +15,9 @@ async function bootstrap() {
 	})
 
 	const config = new DocumentBuilder()
-		.setTitle('Cats example')
-		.setDescription('The cats API description')
+		.setTitle('To-do-list')
+		.setDescription('The to-do list')
 		.setVersion('1.0')
-		.addTag('cats')
 		.build()
 	const documentFactory = () => SwaggerModule.createDocument(app, config)
 	SwaggerModule.setup('openapi', app, documentFactory)

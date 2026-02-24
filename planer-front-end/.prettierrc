@@ -26,6 +26,6 @@
         "(.scss)$"
     ],
     "importOrderSeparation": true,
-    "imporetOrderSortSpecifiers": true,
+    "importOrderSortSpecifiers": true,
     "plugins": ["@trivago/prettier-plugin-sort-imports"]
 }
