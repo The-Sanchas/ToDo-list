@@ -40,7 +40,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${ notoSans.className }`}>
-
         <Providers>{children} 
           <Toaster
             theme="dark"
