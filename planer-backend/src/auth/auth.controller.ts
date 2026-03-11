@@ -46,7 +46,8 @@ export class AuthController {
 		@Req() req: Request,
 		@Res({ passthrough: true }) res: Response
 	){
-		const refreshTokenFromCookies = req.cookies[this.configService.getOrThrow<string>('REFRASH_TOKEN_NAME')]
+		const refreshTokenFromCookies =
+			req.cookies[this.configService.getOrThrow<string>('REFRESH_TOKEN_NAME')]
 
 		if(!refreshTokenFromCookies) {
 			this.authService.removeRefreshTokenFromResponse(res)
